@@ -14,5 +14,12 @@ pip install markdown-emdash
 ## Usage
 
 ```python
+markdown.markdown(some_text, extensions=['emdash'])
+```
+
+or
+
+```python
+from mdx_emdash import EmDashExtension
 markdown.markdown(some_text, extensions=[EmDashExtension()])
 ```

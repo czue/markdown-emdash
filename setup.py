@@ -16,8 +16,8 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='markdown-emdash',
-    version='0.0.3',
-    py_modules=['markdown_emdash'],
+    version='0.0.5',
+    py_modules=['mdx_emdash'],
     include_package_data=True,
     license='MIT License',
     description='Extension for python-markdown that replaces all triple dashes em-dashes.',

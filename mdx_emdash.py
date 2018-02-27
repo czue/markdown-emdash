@@ -22,3 +22,7 @@ class EmDashExtension(Extension):
 
     def extendMarkdown(self, md, md_globals):
         md.inlinePatterns.add('emdashpattern', EmDashPattern(), '<not_strong')
+
+
+def makeExtension(**kwargs):
+    return EmDashExtension(**kwargs)
