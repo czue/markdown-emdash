@@ -14,7 +14,7 @@ pip install markdown-emdash
 ## Usage
 
 ```python
-markdown.markdown(some_text, extensions=['emdash'])
+markdown.markdown(some_text, extensions=['mdx_emdash'])
 ```
 
 or
