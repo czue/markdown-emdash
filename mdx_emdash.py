@@ -20,8 +20,8 @@ class EmDashExtension(Extension):
     Extension that replaces '---' with '&emdash;'.
     """
 
-    def extendMarkdown(self, md, md_globals):
-        md.inlinePatterns.add('emdashpattern', EmDashPattern(), '<not_strong')
+    def extendMarkdown(self, md):
+        md.inlinePatterns.register(EmDashPattern(), 'emdashpattern', 100)
 
 
 def makeExtension(**kwargs):
